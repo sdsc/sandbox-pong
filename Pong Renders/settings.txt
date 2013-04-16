@@ -1,0 +1,14 @@
+# boundsx[0] 
+0 
+# boundsx[1] 
+1360  
+# boundsy[0]
+0   
+# boundsy[1]
+768
+# right_edge_node 
+False
+# left_edge_node
+True
+# ip_address 
+10.10.0.10 
