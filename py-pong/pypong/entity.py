@@ -197,18 +197,6 @@ class Rect( object ):
         self.y = value - self.height/2
 
     def colliderect( self, other_rect ):
-        # simple colision detection for 2d rects. Won't check non opposing edges, i.e.
-        # self.left won't collide with rect.left
-        # outside_left = self.left < other_rect.right and self.bottom <= other_rect.top 
-
-        # outside_right = ( self.right < other_rect.left and self.left > other_rect.right )\
-        #      and( self.bottom <= other_rect.top and self.top >= other_rect.bottom )
-
-        # outside_top = ( self.top < other_rect.bottom and self.bottom > other_rect.top )\
-        #      and( self.left <= other_rect.right and self.right >= other_rect.left )
-
-        # outside_bottom = ( self.bottom < other_rect.top and self.top > other_rect.bottom )\
-        #      and( self.left <= other_rect.right and self.right >= other_rect.left )
         outside_left = ( self.left < other_rect.right and self.right > other_rect.left )\
                      and( self.bottom <= other_rect.top and self.top >= other_rect.bottom )
 
